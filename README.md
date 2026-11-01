@@ -38,7 +38,7 @@ Pas de compte, pas de serveur, pas de télémétrie.
 | ⬇️ **Téléchargements** | Gardez un film, un épisode ou une saison pour les regarder sans connexion, dans le dossier de votre choix. Le téléchargement reprend tout seul après une coupure. |
 | 🔁 **Lecture qui tient bon** | Une micro-coupure ? Le flux se reconnecte seul et le plein écran reste en place. |
 | 🔎 **Recherche instantanée** | Tolère les accents et les fautes de frappe, avec tri et filtres par pays. |
-| ⭐ **Favoris à votre façon** | Autant de listes que vous voulez, avec leur nom, leur icône et leur ordre. |
+| ⭐ **Favoris à votre façon** | Des favoris généraux, ou autant de listes que vous voulez, avec leur nom, leur icône et leur ordre. |
 | ✨ **FILTERED** | Range automatiquement les centaines de groupes de votre fournisseur par région, pays et thème. Vos playlists ne sont jamais modifiées. |
 | 💾 **Sauvegarde** | Exportez vos réglages et favoris. Les mots de passe ne sortent que dans un fichier chiffré par votre phrase de passe. |
 | 🔒 **Mises à jour signées** | L'app vérifie la signature et l'empreinte de chaque version avant de l'installer. |
@@ -118,7 +118,7 @@ Android TV). No account, no server, no telemetry: everything stays on your devic
 - XMLTV TV guide, plus catch-up when your provider supports it
 - Offline downloads with automatic resume, in the folder of your choice
 - Automatic reconnection that keeps you in full screen
-- Instant search, multiple favorite lists, automatic group sorting
+- Instant search, general favorites or custom lists, automatic group sorting
 - Encrypted backups, signed updates, 10 languages, dark and light themes
 
 **[⬇ Download the latest version](https://github.com/BigFatDeuce/Chud-IPTV/releases/latest)**: use the `setup.exe` on Windows, the
