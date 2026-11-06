@@ -9,7 +9,7 @@
 Your sources, favorites and data stay on your device.<br>
 No account, no server, no telemetry.
 
-[![Latest release](https://img.shields.io/github/v/release/BigFatDeuce/Chud-IPTV?label=version&color=8B5CFF)](https://github.com/BigFatDeuce/Chud-IPTV/releases/latest)
+[![Latest release](https://img.shields.io/github/v/release/BigFatDeuce/Chud-IPTV?label=version&color=F9C83A)](https://github.com/BigFatDeuce/Chud-IPTV/releases/latest)
 ![Windows](https://img.shields.io/badge/Windows-x64-22B8E6)
 ![Android](https://img.shields.io/badge/Android-phone%20·%20TV-22B8E6)
 ![Linux](https://img.shields.io/badge/Linux-AppImage-22B8E6)
