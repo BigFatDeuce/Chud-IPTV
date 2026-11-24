@@ -1,0 +1,6 @@
+#!/bin/sh
+# Point d'entrée de l'AppImage : lance l'app Flutter rangée dans usr/bin avec ses bibliothèques.
+HERE="$(dirname "$(readlink -f "$0")")"
+export LD_LIBRARY_PATH="$HERE/usr/lib:$HERE/usr/bin/lib:${LD_LIBRARY_PATH:-}"
+export LIBMPV_LIBRARY_PATH="$HERE/usr/lib/libmpv.so.1"
+exec "$HERE/usr/bin/chud-iptv" "$@"

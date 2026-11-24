@@ -1,0 +1,15 @@
+dist/
+.essai-windows/
+.essai-install/
+.claude/
+*.apk
+*.AppImage
+*.jks
+*.keystore
+app/android/key.properties
+__pycache__/
+CLAUDE.local.md
+
+# Private words checked before publishing the source
+scripts/.private-words
+AGENTS.md

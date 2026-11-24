@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Trophy"><title>Trophy</title><path fill="#123f7d" stroke="#011128" stroke-width="7" stroke-linejoin="round" d="M86 104C92 135 109 150 106 180C104 192 97 206 88 225Q84 236 100 240Q128 246 156 240Q172 236 168 225C159 206 152 192 150 180C147 150 164 135 170 104Z"/>
+<g fill="none" stroke="#f9c83a" stroke-width="7" stroke-linecap="round">
+<path d="M96 124C102 140 112 150 112 166"/>
+<path d="M126 126C128 150 120 172 112 194"/>
+<path d="M146 126C145 150 134 172 126 194"/>
+<path d="M163 120C156 142 146 160 140 194"/>
+</g>
+<path fill="none" stroke="#011128" stroke-width="6" d="M104 197Q128 204 152 197"/>
+<path fill="#f9c83a" stroke="#011128" stroke-width="4" stroke-linejoin="round" d="M100 203Q128 211 156 203L163 224Q128 233 93 224Z"/>
+<path fill="#011128" d="M128 210L140 218L128 226L116 218Z"/>
+<path fill="none" stroke="#f9c83a" stroke-width="6" stroke-linecap="round" d="M92 233Q128 243 164 233"/>
+<circle cx="128" cy="68" r="56" fill="#123f7d" stroke="#011128" stroke-width="7"/>
+<g fill="none" stroke="#f9c83a" stroke-width="2.5" stroke-linecap="round">
+<path d="M128 15V56M92 28Q128 40 164 28M112 17Q96 34 96 54M144 17Q160 34 160 54"/>
+<path d="M78 46L96 54M178 46L160 54M86 101L108 92M170 101L148 92M96 92Q96 104 102 116M160 92Q160 104 154 116"/>
+</g>
+<path fill="none" stroke="#011128" stroke-width="10" stroke-linecap="round" d="M76 65H180"/>
+<path fill="none" stroke="#f9c83a" stroke-width="4.5" stroke-linecap="round" d="M76 65H180"/>
+<rect x="86" y="57" width="36" height="28" rx="5" fill="#011128" stroke="#011128" stroke-width="10"/>
+<rect x="134" y="57" width="36" height="28" rx="5" fill="#011128" stroke="#011128" stroke-width="10"/>
+<rect x="86" y="57" width="36" height="28" rx="5" fill="#011128" stroke="#f9c83a" stroke-width="4.5"/>
+<rect x="134" y="57" width="36" height="28" rx="5" fill="#011128" stroke="#f9c83a" stroke-width="4.5"/>
+<path fill="#f9c83a" d="M93 64L117 73Q112 80 103 80Q93 78 93 64ZM163 64L139 73Q144 80 153 80Q163 78 163 64Z"/>
+<circle cx="106" cy="73" r="5.5" fill="#011128"/><circle cx="150" cy="73" r="5.5" fill="#011128"/>
+<path fill="#f9c83a" d="M128 80L136 88H120Z"/>
+<path fill="none" stroke="#f9c83a" stroke-width="4" stroke-linecap="round" d="M106 108Q128 94 150 108"/></svg>

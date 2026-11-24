@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Chud IPTV
+Comment=Lecteur IPTV local
+Comment[en]=Local IPTV player
+Exec=chud-iptv
+Icon=chud-iptv
+Categories=AudioVideo;Video;TV;Player;
+Terminal=false

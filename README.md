@@ -98,6 +98,22 @@ All files are on the [releases page](https://github.com/BigFatDeuce/Chud-IPTV/re
 The current version has been tested on Windows, an Android emulator and a clean Debian 13 install. Testing on real phones and TVs
 is still underway, so feedback is welcome in the [issues](https://github.com/BigFatDeuce/Chud-IPTV/issues).
 
-This repository hosts the releases. The source code isn't published here.
-
 Chud IPTV doesn't bypass any DRM. You are responsible for the content you access with the app.
+
+## Building from source
+
+Install [Flutter](https://docs.flutter.dev/get-started/install) 3.47 (stable channel), then from the `app/` folder:
+
+```bash
+flutter pub get
+flutter test
+flutter build windows --release   # or: flutter build linux --release, flutter build apk --release
+```
+
+Release builds of the apps you install from this page are signed with keys that are not in this repository, so a build of
+your own installs next to them but cannot update them.
+
+## License
+
+© 2026 BigFatDeuce. The code is free software under the [GPL-3.0-or-later](LICENSE): you can use, study, share and modify it,
+and versions you distribute must stay under the same licence. Third-party components keep their own licences.

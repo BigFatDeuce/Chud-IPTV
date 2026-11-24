@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Trophy (16-24 px)"><title>Trophy (16-24 px)</title><path fill="#123f7d" stroke="#011128" stroke-width="3" stroke-linejoin="round" d="M19 30C22 38 27 41 26 46C25 50 22 54 19 58Q32 62 45 58C42 54 39 50 38 46C37 41 42 38 45 30Z"/>
+<path fill="none" stroke="#f9c83a" stroke-width="3" d="M32 38C33 44 29 48 26 52M38 42C36 46 34 50 32 53"/>
+<path fill="none" stroke="#f9c83a" stroke-width="3" stroke-linecap="round" d="M21 57Q32 61 43 57"/>
+<circle cx="32" cy="23" r="21" fill="#123f7d" stroke="#011128" stroke-width="3"/>
+<path fill="none" stroke="#f9c83a" stroke-width="1.5" d="M32 3V13M20 8Q32 13 44 8"/>
+<rect x="16" y="15" width="14" height="11" rx="2" fill="#011128" stroke="#f9c83a" stroke-width="2.5"/>
+<rect x="34" y="15" width="14" height="11" rx="2" fill="#011128" stroke="#f9c83a" stroke-width="2.5"/>
+<path fill="#f9c83a" d="M30 19H34V21H30ZM19 18L27 22Q25 24 22 24Q19 23 19 18ZM45 18L37 22Q39 24 42 24Q45 23 45 18Z"/>
+<path fill="none" stroke="#f9c83a" stroke-width="2.5" stroke-linecap="round" d="M25 36Q32 31 39 36"/></svg>

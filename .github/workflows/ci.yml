@@ -1,0 +1,135 @@
+name: Compilation
+
+# Vérifie le code et compile les trois plateformes à chaque envoi : un problème propre à une
+# plateforme se voit tout de suite, pas le jour de la publication. Rien n'est mis en ligne.
+#
+# Secrets facultatifs (Settings > Secrets and variables > Actions) :
+#   ANDROID_KEYSTORE_BASE64   clé de signature Android (fichier .jks en base64)
+#   ANDROID_KEYSTORE_PASSWORD son mot de passe
+# Sans eux, l'APK porte une clé de test : il s'installe, mais ne peut pas être publié.
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+env:
+  FLUTTER_VERSION: "3.47.8"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v7
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter analyze
+      - run: flutter test
+
+  android:
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - name: Clé de signature
+        env:
+          KEYSTORE: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+        run: |
+          if [ -n "$KEYSTORE" ]; then
+            echo "$KEYSTORE" | base64 --decode > "$RUNNER_TEMP/release.jks"
+            printf 'storeFile=%s\nstorePassword=%s\nkeyAlias=chud\nkeyPassword=%s\n' \
+              "$RUNNER_TEMP/release.jks" "$KEYSTORE_PASSWORD" "$KEYSTORE_PASSWORD" > android/key.properties
+          else
+            echo "::warning::Pas de clé de signature : APK signé avec une clé de test, impossible à publier."
+          fi
+      - run: flutter build apk --release --split-per-abi --target-platform android-arm,android-arm64
+      - name: Fichiers
+        run: |
+          v=$(grep '^version:' pubspec.yaml | sed -E 's/version: *([0-9.]+).*/\1/')
+          mkdir -p ../dist
+          cp build/app/outputs/flutter-apk/app-arm64-v8a-release.apk "../dist/Chud-IPTV-$v-arm64.apk"
+          cp build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk "../dist/Chud-IPTV-$v-armv7.apk"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: android
+          path: dist/
+          retention-days: 14
+
+  windows:
+    needs: test
+    runs-on: windows-latest
+    timeout-minutes: 40
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v7
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter build windows --release
+      - name: Archive
+        shell: pwsh
+        run: |
+          $v = (Select-String -Path pubspec.yaml -Pattern '^version:\s*([0-9.]+)').Matches.Groups[1].Value
+          New-Item -ItemType Directory -Force ../dist | Out-Null
+          Compress-Archive -Path build/windows/x64/runner/Release/* -DestinationPath "../dist/Chud-IPTV-$v-windows-x64.zip"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: windows
+          path: dist/
+          retention-days: 14
+
+  linux:
+    needs: test
+    # Version d'Ubuntu plus ancienne : l'AppImage fonctionne ainsi sur davantage de distributions.
+    runs-on: ubuntu-22.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v7
+      - name: Outils de compilation
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev desktop-file-utils libmpv-dev mpv
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - name: Compilation
+        working-directory: app
+        run: flutter build linux --release
+      - name: AppImage
+        run: |
+          v=$(grep '^version:' app/pubspec.yaml | sed -E 's/version: *([0-9.]+).*/\1/')
+          bash packaging/linux/build-appimage.sh "$v" dist
+      - uses: actions/upload-artifact@v7
+        with:
+          name: linux
+          path: dist/
+          retention-days: 14

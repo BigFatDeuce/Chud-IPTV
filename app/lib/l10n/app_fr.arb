@@ -1,0 +1,637 @@
+{
+  "@@locale": "fr",
+  "navLive": "Direct",
+  "navFavorites": "Favoris",
+  "navMovies": "Films",
+  "navSeries": "Séries",
+  "navSources": "Sources",
+  "navSettings": "Réglages",
+  "navMore": "Plus",
+  "commonCancel": "Annuler",
+  "commonSave": "Enregistrer",
+  "commonDelete": "Supprimer",
+  "commonClose": "Fermer",
+  "commonRetry": "Réessayer",
+  "welcomeTitle": "Bienvenue",
+  "welcomeBody": "Ajoutez une source pour commencer : un compte Xtream Codes ou une playlist M3U. L'app ne fournit aucune chaîne, tout reste sur cet appareil.",
+  "addSource": "Ajouter une source",
+  "allSources": "Toutes les sources",
+  "allCategories": "Tout",
+  "noCategoryName": "Sans catégorie",
+  "filterCategories": "Filtrer les catégories",
+  "emptyList": "Rien à afficher ici.",
+  "emptyWhileImporting": "Import en cours, le catalogue apparaîtra dès qu'il sera prêt.",
+  "itemCount": "{count, plural, =0{Aucun élément} =1{1 élément} other{{count} éléments}}",
+  "@itemCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "viewCompact": "Liste compacte",
+  "viewDetailed": "Liste détaillée",
+  "viewGrid": "Grille",
+  "searchHint": "Rechercher",
+  "noResults": "Aucun résultat pour « {query} ».",
+  "@noResults": {
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "sortLabel": "Trier",
+  "sortSource": "Ordre de la source",
+  "sortNameAsc": "Nom (A → Z)",
+  "sortNameDesc": "Nom (Z → A)",
+  "sortRecent": "Ajouts récents",
+  "sortRating": "Mieux notés",
+  "filterLabel": "Filtres",
+  "filterCountry": "Pays ou langue",
+  "filterAllCountries": "Tous les pays",
+  "itemSource": "Source",
+  "itemCategory": "Catégorie",
+  "itemCountry": "Pays ou langue",
+  "itemFormat": "Format",
+  "itemRating": "Note",
+  "favAdd": "Ajouter aux favoris",
+  "favRemove": "Retirer des favoris",
+  "favPickLists": "Listes de favoris",
+  "favNewList": "Nouvelle liste",
+  "favDefaultName": "Favoris",
+  "favListName": "Nom de la liste",
+  "favListIcon": "Icône",
+  "favRename": "Modifier la liste",
+  "favDeleteList": "Supprimer la liste",
+  "favDeleteConfirm": "Supprimer la liste « {name} » ? Les chaînes restent dans le catalogue.",
+  "@favDeleteConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "favEmptyLists": "Créez vos listes : sport, info, enfants… Une même chaîne peut être dans plusieurs listes.",
+  "favEmptyList": "Cette liste est vide. Ajoutez des chaînes avec l'étoile.",
+  "favManage": "Gérer les listes",
+  "favMoveUp": "Monter",
+  "favMoveDown": "Descendre",
+  "favListLine": "{name} ({count})",
+  "@favListLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "filteredIntro": "FILTERED regroupe automatiquement les groupes de vos sources par pays, région et thème. L'onglet Direct et vos playlists ne changent pas.",
+  "filteredNoGroups": "Aucun groupe à analyser pour le moment. Actualisez une source.",
+  "filteredAnalyze": "Organiser automatiquement",
+  "filteredManage": "Classement",
+  "filteredReanalyze": "Relancer l'analyse et corriger",
+  "filteredRestore": "Restaurer le classement automatique",
+  "filteredRestoreConfirm": "Vos corrections manuelles seront oubliées. Vous verrez l'aperçu avant de valider.",
+  "filteredPreviewTitle": "Aperçu du classement",
+  "filteredSummary": "{groups} groupes rangés dans {nodes} catégories",
+  "@filteredSummary": {
+    "placeholders": {
+      "groups": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "nodes": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "filteredDelta": "Depuis la dernière analyse : {added} nouveaux, {removed} disparus",
+  "@filteredDelta": {
+    "placeholders": {
+      "added": {
+        "type": "int"
+      },
+      "removed": {
+        "type": "int"
+      }
+    }
+  },
+  "filteredNewGroups": "{count} nouveaux groupes à ranger : ouvrir l'aperçu",
+  "@filteredNewGroups": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "filteredToCheck": "À vérifier ({count})",
+  "@filteredToCheck": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "filteredUnclassified": "Non classés ({count})",
+  "@filteredUnclassified": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "filteredExcluded": "Groupes exclus ({count})",
+  "@filteredExcluded": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "filteredGroupsCount": "{count} groupes",
+  "@filteredGroupsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "filteredValidate": "Valider ce classement",
+  "filteredAccept": "C'est bon",
+  "filteredMove": "Ranger dans…",
+  "filteredExclude": "Exclure du classement",
+  "filteredRestoreGroup": "Réintégrer",
+  "filteredNewCategory": "Nouvelle catégorie",
+  "filteredRename": "Renommer",
+  "filteredMerge": "Fusionner dans…",
+  "sourcesTitle": "Sources IPTV",
+  "refreshAll": "Tout actualiser",
+  "refresh": "Actualiser",
+  "editSource": "Modifier",
+  "deleteSource": "Supprimer la source",
+  "deleteSourceConfirm": "Supprimer « {name} » et tout son catalogue de cet appareil ?",
+  "@deleteSourceConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "sourceEnabled": "Activée",
+  "makeDefault": "Utiliser par défaut",
+  "isDefault": "Source par défaut",
+  "kindXtream": "Xtream Codes",
+  "kindM3uUrl": "Playlist en ligne",
+  "kindM3uFile": "Fichier M3U",
+  "countsLine": "{live} chaînes · {movies} films · {series} séries",
+  "@countsLine": {
+    "placeholders": {
+      "live": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "movies": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "series": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "neverRefreshed": "Jamais actualisée",
+  "refreshedAt": "Actualisée le {date}",
+  "@refreshedAt": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "expiresAt": "Abonnement valable jusqu'au {date}",
+  "@expiresAt": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "maxConnections": "{count, plural, =1{1 lecture simultanée} other{{count} lectures simultanées}}",
+  "@maxConnections": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "applyAnyway": "Appliquer quand même",
+  "reportDone": "« {name} » : {added} ajoutés, {updated} modifiés, {missing} disparus.",
+  "@reportDone": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "added": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "updated": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "missing": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "stageConnecting": "Connexion au serveur…",
+  "stageLive": "Téléchargement des chaînes…",
+  "stageMovies": "Téléchargement des films…",
+  "stageSeries": "Téléchargement des séries…",
+  "stagePlaylist": "Téléchargement de la playlist…",
+  "stageWriting": "Enregistrement du catalogue…",
+  "stageWritingCount": "Enregistrement : {count} éléments…",
+  "@stageWritingCount": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "stageQueued": "En attente…",
+  "errorNetwork": "Serveur injoignable. Vérifiez l'adresse et votre connexion.",
+  "errorTimeout": "Le serveur met trop de temps à répondre.",
+  "errorCredentials": "Identifiant ou mot de passe refusé par le serveur.",
+  "errorExpired": "Cet abonnement a expiré.",
+  "errorNotFound": "Adresse introuvable sur ce serveur.",
+  "errorNotPlaylist": "Ce contenu n'est pas une playlist M3U.",
+  "errorInvalidData": "Le serveur a renvoyé une réponse illisible.",
+  "errorEmpty": "La source est vide : le catalogue actuel est conservé.",
+  "errorSuspicious": "Liste anormalement réduite ({detail}) : le catalogue actuel est conservé.",
+  "@errorSuspicious": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "errorFileMissing": "Fichier introuvable ou illisible.",
+  "errorUnknown": "L'actualisation a échoué. Le catalogue actuel est conservé.",
+  "formNewTitle": "Nouvelle source",
+  "formEditTitle": "Modifier la source",
+  "formName": "Nom",
+  "formNameHint": "Ex. : Salon, Abonnement 1",
+  "formServer": "Adresse du serveur",
+  "formUsername": "Nom d'utilisateur",
+  "formPassword": "Mot de passe",
+  "formShowPassword": "Afficher le mot de passe",
+  "formPlaylistUrl": "Adresse de la playlist (M3U ou M3U8)",
+  "formFile": "Fichier de playlist",
+  "formChooseFile": "Choisir un fichier",
+  "formNoFile": "Aucun fichier choisi",
+  "formFileUnavailable": "Aucun sélecteur de fichiers sur cet appareil.",
+  "formRequired": "Champ obligatoire",
+  "formInvalidUrl": "Adresse invalide",
+  "formContentTitle": "Contenu à importer",
+  "formContentHint": "Le direct est toujours importé. Sans films ni séries, le chargement est bien plus léger.",
+  "formMovies": "Films",
+  "formSeries": "Séries",
+  "formContentRemoved": "Les éléments déjà importés, et leurs favoris, seront retirés de cet appareil.",
+  "settingsTitle": "Réglages",
+  "settingsTheme": "Thème",
+  "themeSystem": "Système",
+  "themeDark": "Sombre",
+  "themeLight": "Clair",
+  "settingsLanguage": "Langue",
+  "languageSystem": "Langue du système",
+  "settingsApp": "Application",
+  "settingsVersion": "Version {version}",
+  "@settingsVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPrivacy": "Aucun compte, aucune télémétrie : vos sources et vos données restent sur cet appareil.",
+  "settingsShortcuts": "Ctrl+F : rechercher · F5 : tout actualiser · Ctrl+1 à 9 : changer d'onglet",
+  "playerPlay": "Lire",
+  "playerPause": "Pause",
+  "playerPrevious": "Précédent",
+  "playerNext": "Suivant",
+  "playerRefresh": "Rafraîchir le flux",
+  "playerFullscreen": "Plein écran",
+  "playerExitFullscreen": "Quitter le plein écran",
+  "playerMute": "Couper le son",
+  "playerUnmute": "Rétablir le son",
+  "playerLive": "DIRECT",
+  "playerReconnecting": "Reconnexion… ({attempt}/{total})",
+  "@playerReconnecting": {
+    "placeholders": {
+      "attempt": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "playerSignalLost": "Signal perdu…",
+  "playerFailedTitle": "Lecture impossible",
+  "playerFailedBody": "Ce flux ne répond pas. Il est peut-être hors ligne, ou votre abonnement lit déjà sur un autre appareil.",
+  "playerEndedTitle": "Lecture terminée",
+  "playerBackToList": "Retour à la liste",
+  "externalTitle": "Lecteur externe",
+  "externalOpen": "Ouvrir dans le lecteur externe",
+  "externalNone": "Aucun lecteur trouvé. VLC est utilisé automatiquement s'il est installé.",
+  "externalFailed": "Impossible de lancer le lecteur externe. Vérifiez son emplacement dans les réglages.",
+  "externalDefault": "Utiliser VLC",
+  "seriesFailed": "Impossible de charger les épisodes.",
+  "seriesEmpty": "Aucun épisode disponible.",
+  "seriesSeason": "Saison {number}",
+  "@seriesSeason": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "seriesEpisode": "Épisode {number}",
+  "@seriesEpisode": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "seriesMinutes": "{count} min",
+  "@seriesMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "navGuide": "Guide",
+  "guideTitle": "Guide des programmes",
+  "guideScope": "Chaînes affichées",
+  "guideAllChannels": "Toutes les chaînes",
+  "guideNow": "Maintenant",
+  "guideToday": "Aujourd'hui",
+  "guideYesterday": "Hier",
+  "guideTomorrow": "Demain",
+  "guideEarlier": "2 h plus tôt",
+  "guideLater": "2 h plus tard",
+  "guideEmptyTitle": "Aucun guide des programmes",
+  "guideEmptyBody": "Importez le guide de vos sources, ou ajoutez une adresse ou un fichier XMLTV dans les réglages.",
+  "guideImport": "Importer le guide",
+  "guideImporting": "Import du guide… {count} programmes",
+  "@guideImporting": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "guideDone": "Guide mis à jour : {programs} programmes, {channels} chaînes associées.",
+  "@guideDone": {
+    "placeholders": {
+      "programs": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "channels": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "guideFailed": "Guide indisponible : {names}. L'ancien guide est conservé.",
+  "@guideFailed": {
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "guideSourceLine": "{count} programmes · {date}",
+  "@guideSourceLine": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "guideNeverRefreshed": "Jamais actualisé",
+  "guideLastFailed": "La dernière actualisation a échoué.",
+  "guideRefresh": "Actualiser le guide",
+  "guideAddUrl": "Ajouter une adresse",
+  "guideAddFile": "Ajouter un fichier",
+  "guideUrlHint": "Adresse du guide XMLTV",
+  "guideWatchLive": "Regarder en direct",
+  "guideReplay": "Revoir",
+  "guideReplayOff": "Replay indisponible pour ce programme.",
+  "guideComing": "À venir",
+  "guideChannel": "Programme de la chaîne",
+  "guideLink": "Associer au guide",
+  "guideLinkHint": "Nom ou identifiant de la chaîne",
+  "guideNoProgram": "Aucun programme pour cette chaîne.",
+  "guideNoChannels": "Aucune chaîne de cette sélection n'a de guide.",
+  "backupTitle": "Sauvegarde",
+  "backupExport": "Créer une sauvegarde",
+  "backupImport": "Restaurer une sauvegarde",
+  "backupRestore": "Restaurer",
+  "backupSecrets": "Inclure les mots de passe",
+  "backupSecretsBody": "Le fichier est alors chiffré par votre phrase de passe. Sinon, mots de passe et adresses complètes des playlists n'y sont pas enregistrés.",
+  "backupPassphrase": "Phrase de passe",
+  "backupPassphraseAgain": "Confirmer la phrase de passe",
+  "backupPassphraseShort": "Au moins 8 caractères.",
+  "backupPassphraseMismatch": "Les deux phrases sont différentes.",
+  "backupSaved": "Sauvegarde enregistrée.",
+  "backupFailed": "Impossible d'écrire ce fichier.",
+  "backupNotOurs": "Ce fichier n'est pas une sauvegarde Chud IPTV.",
+  "backupTooNew": "Cette sauvegarde vient d'une version plus récente de l'app.",
+  "backupDamaged": "Cette sauvegarde est endommagée.",
+  "backupWrongPassphrase": "Phrase de passe incorrecte, ou fichier modifié.",
+  "backupConfirmTitle": "Restaurer cette sauvegarde ?",
+  "backupConfirmBody": "Sauvegarde du {date}. Sources : {sources}, listes : {lists}, favoris : {favorites}. Vos données actuelles sont gardées et complétées ; seuls les réglages sont remplacés.",
+  "@backupConfirmBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "sources": {
+        "type": "int"
+      },
+      "lists": {
+        "type": "int"
+      },
+      "favorites": {
+        "type": "int"
+      }
+    }
+  },
+  "backupRestored": "Restauration terminée.",
+  "backupIncomplete": "Restauration terminée. Sources à compléter : {count}. Leur mot de passe ou adresse n'était pas dans le fichier.",
+  "@backupIncomplete": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "autoTitle": "Actualisation automatique",
+  "autoOff": "Désactivée",
+  "autoEvery": "Toutes les {hours} h",
+  "@autoEvery": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "dataTitle": "Données locales",
+  "cacheLine": "Cache des logos : {size} Mo",
+  "@cacheLine": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "cacheClear": "Vider le cache",
+  "cacheCleared": "Cache vidé.",
+  "wipeButton": "Effacer toutes les données",
+  "wipeTitle": "Tout effacer ?",
+  "wipeBody": "Sources, favoris, guide, téléchargements et réglages seront supprimés de cet appareil. Cette action est définitive.",
+  "wipeConfirm": "Tout effacer",
+  "updateTitle": "Mises à jour",
+  "updateAuto": "Vérifier automatiquement",
+  "updateCheck": "Rechercher une mise à jour",
+  "updateChecking": "Recherche en cours…",
+  "updateLatest": "Vous avez la dernière version.",
+  "updateAvailable": "Version {version} disponible",
+  "@updateAvailable": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "updateSee": "Voir",
+  "updateInstall": "Mettre à jour",
+  "updateDownloading": "Téléchargement… {percent} %",
+  "@updateDownloading": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "updateVerifying": "Vérification du fichier…",
+  "updateRestarting": "Installation : l'app va redémarrer.",
+  "updateConfirmSystem": "Confirmez l'installation dans la fenêtre du système.",
+  "updateOpened": "Le téléchargement s'est ouvert dans votre navigateur : installez-le, puis relancez l'app.",
+  "updateCancelled": "Mise à jour annulée.",
+  "updateNoChannel": "Cette version n'est reliée à aucun canal de mise à jour.",
+  "updateFailedNetwork": "Serveur de mise à jour injoignable.",
+  "updateFailedSignature": "Signature invalide : mise à jour refusée.",
+  "updateFailedIntegrity": "Fichier corrompu : rien n'a été installé.",
+  "updateFailedInstall": "L'installation a échoué.",
+  "updateDone": "Mise à jour vers la version {version} installée.",
+  "@updateDone": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "updateNotApplied": "La mise à jour vers la version {version} n'a pas pu s'installer : l'ancienne version reste en place.",
+  "@updateNotApplied": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "navDownloads": "Téléchargements",
+  "downloadAction": "Télécharger",
+  "downloadSeason": "Télécharger la saison",
+  "downloadAdded": "Ajouté aux téléchargements : {title}",
+  "@downloadAdded": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "downloadPlay": "Lire le fichier",
+  "downloadEmptyTitle": "Aucun téléchargement",
+  "downloadEmptyBody": "Téléchargez un film depuis sa fiche, ou un épisode depuis sa série, pour le regarder sans connexion.",
+  "downloadQueued": "En attente",
+  "downloadPaused": "En pause",
+  "downloadHeld": "En attente de la fin de la lecture",
+  "downloadPause": "Mettre en pause",
+  "downloadResume": "Reprendre",
+  "downloadDeleteTitle": "Supprimer ce téléchargement ?",
+  "downloadDeleteBody": "{title} sera retiré de cet appareil.",
+  "@downloadDeleteBody": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "downloadFolder": "Dossier des téléchargements",
+  "downloadSizeMb": "{size} Mo",
+  "@downloadSizeMb": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "downloadSizeGb": "{size} Go",
+  "@downloadSizeGb": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "downloadErrorNetwork": "Connexion perdue. Le fichier est gardé : la reprise continue où elle s'est arrêtée.",
+  "downloadErrorServer": "Le serveur a refusé. Une autre lecture utilise peut-être votre connexion.",
+  "downloadErrorFormat": "Ce contenu est diffusé par morceaux et ne peut pas être téléchargé.",
+  "downloadErrorDisk": "Écriture impossible : espace disque insuffisant ou dossier inaccessible.",
+  "downloadErrorSource": "La source de ce téléchargement n'existe plus.",
+  "downloadErrorMissing": "Le fichier a été déplacé ou supprimé.",
+  "downloadFolderChoose": "Choisir un dossier",
+  "downloadFolderReset": "Dossier par défaut",
+  "downloadFolderApp": "Dossier de l'app, supprimé avec elle",
+  "downloadFolderHint": "Vaut pour les prochains téléchargements. Ceux déjà terminés restent où ils sont.",
+  "favChooseBody": "Vous n'avez pas encore de liste. Où voulez-vous ranger ce favori ?",
+  "favGlobal": "Favoris généraux",
+  "settingsPhoneTitle": "Lecture sur téléphone",
+  "settingsPip": "Image dans l'image",
+  "settingsPipBody": "La vidéo continue dans une petite fenêtre quand vous quittez l'app. Un bouton apparaît dans le lecteur.",
+  "settingsRadio": "Mode radio",
+  "settingsRadioBody": "Le son continue quand le téléphone est verrouillé ou l'app en arrière-plan. Un bouton apparaît dans le lecteur.",
+  "playerPipOn": "Image dans l'image activée",
+  "playerPipOff": "Image dans l'image désactivée",
+  "playerRadioOn": "Mode radio activé",
+  "playerRadioOff": "Mode radio désactivé",
+  "radioNotificationStop": "Arrêter"
+}
